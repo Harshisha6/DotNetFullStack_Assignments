@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+<h3 >JavaScript Programming</h3>
+<hr/>
+First Number :  
+<input type="text" id="t1"  />
+<br></br>
+Second Number :  
+<input type="text" id="t2"  />
+<br></br>
+<input type="button" onclick="f1()"
+			value="Done"  />	 	
+ </br>
+<p id="p1"></p>
+
+<script>
+	function  f1()
+	{
+        let paraObj = document.getElementById("p1");
+        let txtObj1=document.getElementById("t1");
+        let txtObj2=document.getElementById("t2");
+        
+        let frstNumber=txtObj1.value;
+        let scndNumber=txtObj2.value;
+        let r1= parseInt(frstNumber) + parseInt(scndNumber);
+        let r2= parseInt(frstNumber) - parseInt(scndNumber);
+        let r3= parseInt(frstNumber) * parseInt(scndNumber);
+        let r4= parseInt(frstNumber) / parseInt(scndNumber);
+        paraObj.innerHTML="Addition : " + r1 + ", Subtraction : " + r2 +", Multiplication : " + r3 + ", Division : " + r4;
+	}
+</script>
+</body>
+</html>
+
+
