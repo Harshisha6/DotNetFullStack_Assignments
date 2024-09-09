@@ -13,7 +13,7 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-            string connStr = "Server = USHYDDEPRANEET1; Database=Sept2024Db; Integrated Security=true";
+            string connStr = "Server = USHYDHSAMBANA1; Database=Sept2024Db; Integrated Security=true";
 
             SqlConnection conn = new SqlConnection(connStr);
             // conn.ConnectionString = connStr;
